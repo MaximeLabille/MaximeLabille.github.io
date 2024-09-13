@@ -1,0 +1,100 @@
+/* https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --main-bg-color: #212529;
+    --secondary-color: #343a40;
+    --terciary-color: #495057;
+    --main-text-color: white;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.nav {
+    padding: 4px;
+    margin: 0px;
+    /*margin-bottom: 4px;*/
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.nav a {
+    color: white;
+}
+
+.nav > .left-nav {
+    left: 0;
+    flex-grow: 1;
+}
+
+.nav > .right-nav {
+    right: 0;
+}
+
+.nav .item > button, .monbtn {
+    padding: 6px 16px;
+    border-radius: 6px;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 150ms;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.monbtn.alt {
+    background-color: var(--secondary-color);
+}
+
+.monbtn.alt:hover {
+    background-color: var(--terciary-color);
+}
+
+.nav .item > button:hover {
+    background-color: var(--terciary-color);
+}
+
+.categorie {
+    min-height: 144px;
+    max-height: 144px;
+    display: grid;
+    width: 100%;
+    place-items: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: var(--main-text-color);
+}
+
+.desc {
+    padding: 12px;
+}
+
+.titleimg {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.iframecontainer {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
