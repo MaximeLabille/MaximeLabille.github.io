@@ -3,6 +3,7 @@ name: Build Tailwind CSS
 permissions:
   contents: write
   pages: write
+  id-token: write
 
 on:
   push:
