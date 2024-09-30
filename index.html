@@ -1,30 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxime L.</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Mes Projets</title>
+    <link rel="stylesheet" type="text/css" href="output.css" />
 </head>
-<body>
-    <!-- navbar -->
-    <div class="nav">
-        <div class="left-nav">
-            <a href=".">ML.</a>
-        </div>
-        <div class="right-nav">
-            <a class="item" href="projets"><button>Mes Projets</button></a>
-            <a class="item" href="a-propos"><button>A Propos</button></a>
+
+<body data-theme="forest">
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <img class="w-24 h-24 bg-base-300 m-auto mb-4 rounded-md" src="https://avatars.githubusercontent.com/u/181330044" />
+                <h1 class="text-5xl font-bold">Labille Maxime</h1>
+                <p class="py-6">
+                    Au fil de mes études, notamment au lycée et en enseignement supérieur, j’ai découvert ma vocation
+                    pour l’informatique, et plus particulièrement pour la programmation. Je maîtrise les langages
+                    Python, JavaScript, HTML et CSS, et j’ai également acquis quelques notions en C++ durant mon passage
+                    au lycée.
+                </p>
+                <a href="#projets">
+                    <button class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+                        </svg>
+                        Mes Projets
+                    </button>
+                </a>
+                <a target="_blank" href="https://github.com/MaximeLabille">
+                    <button class="btn btn-neutral btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 98 96" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </a>
+                <a target="_blank" href="https://fr.linkedin.com/">
+                    <button class="btn btn-neutral btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 448 512">
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
-    
-    <div class="list">
-        <a class="categorie" href="https://github.com/MaximeLabille" style="background: gray">
-            Mon Profile Github
-        </a>
-        <a class="categorie" href="projets" style="background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/large_img.jpeg)">
-            Mes Projets
-        </a>
+    <div class="flex flex-col place-items-center justify-center mb-6">
+        <h1 class="my-4 text-2xl font-bold" id="projets">Mes Projets</h1>
+        <div class="flex w-96 max-w-96 flex-col p-2 bg-base-200 rounded-xl">
+            <div role="tablist" id="tabs" class="tabs tabs-boxed mb-2">
+                <a role="tab" data="tp" class="tab tab-active">Les TPs</a>
+                <a role="tab" data="mission" class="tab">Les Missions</a>
+            </div>
+            <div id="projets_content" class="overflow-y-scroll max-h-64 min-h-64 h-64">
+                <div id="template" data="template" class="flex flex-row rounded-xl bg-base-300 p-4 mb-2">
+                    <div id="projet">TP1</div>
+                    <div class="ml-auto">
+                        <a target="_blank" id="livelink" href="/TP1">
+                            <button class="btn btn-square btn-neutral btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                </svg>
+                            </button>
+                        </a>
+                        <a target="_blank" id="repolink" href="https://github.com/MaximeLabille/TP1">
+                            <button class="btn btn-square btn-neutral btn-sm">
+                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    stroke-width="2.5" class="h-4 w-4">
+                                    <path
+                                        d="M14 4a2 2 0 1 0-2.47 1.94V7a.48.48 0 0 1-.27.44L8.49 8.88l-2.76-1.4A.49.49 0 0 1 5.46 7V5.94a2 2 0 1 0-1 0V7a1.51 1.51 0 0 0 .82 1.34L8 9.74v1.32a2 2 0 1 0 1 0V9.74l2.7-1.36A1.49 1.49 0 0 0 12.52 7V5.92A2 2 0 0 0 14 4zM4 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm5.47 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM12 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer class="footer footer-center bg-base-300 text-base-content p-4">
+        <aside>
+          <p>Modifier pour la derniere fois le 09.30.2024 <a class="right-0 absolute mr-4 underline" href="/v1/">ancien site</a></p>
+        </aside>
+      </footer>
+    <script src="projets.js"></script>
 </body>
+
 </html>

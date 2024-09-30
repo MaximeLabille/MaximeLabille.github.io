@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-sm {
+    width: 2rem;
+    height: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
+}
+
+div[data="template"] {
+    display: none;
+}
+
+.tab {
+    transition: all 300ms;
+}
+
+.tab:nth-child(1) {
+    margin-right: 0.25rem;
+}
