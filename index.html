@@ -9,10 +9,22 @@
 </head>
 
 <body data-theme="forest">
+    <dialog id="descmodal" class="modal">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold" id="name">TP 1</h3>
+            <p class="py-4" id="desc">Le Premier TP, pour les balises HTML de base, fait le 16/09/2024.</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
     <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content text-center">
             <div class="max-w-md">
-                <img class="w-24 h-24 bg-base-300 m-auto mb-4 rounded-md" src="https://avatars.githubusercontent.com/u/181330044" />
+                <img class="w-24 h-24 bg-base-300 m-auto mb-4 rounded-md"
+                    src="https://avatars.githubusercontent.com/u/181330044" />
                 <h1 class="text-5xl font-bold">Labille Maxime</h1>
                 <p class="py-6">
                     Au fil de mes études, notamment au lycée et en enseignement supérieur, j’ai découvert ma vocation
@@ -62,6 +74,12 @@
                 <div id="template" data="template" class="flex flex-row rounded-xl bg-base-300 p-4 mb-2">
                     <div id="projet">TP1</div>
                     <div class="ml-auto">
+                        <button id="about" class="btn btn-square btn-neutral btn-sm">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                            </svg>
+                        </button>
                         <a target="_blank" id="livelink" href="/TP1">
                             <button class="btn btn-square btn-neutral btn-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -88,9 +106,10 @@
     </div>
     <footer class="footer footer-center bg-base-300 text-base-content p-4">
         <aside>
-          <p>Modifier pour la derniere fois le 09.30.2024 <a class="right-0 absolute mr-4 underline" href="/v1/">ancien site</a></p>
+            <p>Modifier pour la derniere fois le 09.30.2024 <a class="right-0 absolute mr-4 underline"
+                    href="/v1/">ancien site</a></p>
         </aside>
-      </footer>
+    </footer>
     <script src="projets.js"></script>
 </body>
 
