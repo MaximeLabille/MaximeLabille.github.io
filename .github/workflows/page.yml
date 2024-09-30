@@ -1,5 +1,9 @@
 name: Build Tailwind CSS
 
+permissions:
+  contents: write
+  pages: write
+
 on:
   push:
     branches:
@@ -43,3 +47,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
