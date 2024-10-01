@@ -1,9 +1,12 @@
+
 name: Build Tailwind CSS
+
 
 permissions:
   contents: write
   pages: write
   id-token: write
+
 
 on:
   push:
@@ -13,31 +16,35 @@ on:
     branches:
       - main
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '20'  # Specify the Node.js version you want to use
 
+
       - name: Install dependencies
         run: npm install
       
       - name: Replace {{commit}} with commit SHA in index.html
-        run: sed -i "s/{{commit}}/${{ github.sha.substring(0, 7) }}/g" src/index.html
+        run: sed -i "s/{{commit}}/${{ github.sha }}.substring(0, 7)/g" src/index.html
           
       - name: Replace {{commitlink}} with commit link in index.html
         run: sed -i "s/{{commitlink}}/${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}/g" src/index.html
 
       - name: Replace {{datecommit}} with commit date in index.html
-        run: sed -i "s/{{datecommit}}/${{ github.event.repository.updated_at.substring(0, 10) }}/g" src/index.html
-
+        run: sed -i "s/{{datecommit}}/${{ github.event.repository.updated_at }}/g" src/index.html
+        
       - name: Build Tailwind CSS
         run: npm run build
 
