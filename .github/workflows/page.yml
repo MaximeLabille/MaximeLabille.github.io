@@ -30,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Replace {{commit}} with commit SHA in index.html
-        run: commit_sha=${GITHUB_SHA:0:7} & sed -i "s/{{commit}}/${{ github_sha }}/g" src/index.html
+        run: commit_sha=${GITHUB_SHA:0:7} sed -i "s/{{commit}}/${{ github_sha }}/g" src/index.html
 
       - name: Replace {{commitlink}} with commit link in index.html
         run: sed -i "s|{{commitlink}}|${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}|g" src/index.html
