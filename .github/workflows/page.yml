@@ -30,8 +30,13 @@ jobs:
         run: npm install
       
       - name: Replace {{commit}} with commit SHA in index.html
-        run: |
-          sed -i "s/{{commit}}/${{ github.sha }}/g" src/index.html
+        run: sed -i "s/{{commit}}/${{ github.sha:0:7 }}/g" src/index.html
+          
+      - name: Replace {{commitlink}} with commit link in index.html
+        run: sed -i "s/{{commitlink}}/${{ github.server_url }}\/${{ github.repository }}\/commit\/${{ github.sha }}/g" src/index.html
+
+      - name: Replace {{datecommit}} with commit date in index.html
+        run: sed -i "s/{{datecommit}}/${{ github.event.repository.updated_at:0:10 }}/g" src/index.html
 
       - name: Build Tailwind CSS
         run: npm run build
