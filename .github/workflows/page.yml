@@ -28,6 +28,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      
+      - name: Replace {{commit}} with commit SHA in index.html
+        run: |
+          sed -i "s/{{commit}}/${{ github.sha }}/g" src/index.html
 
       - name: Build Tailwind CSS
         run: npm run build

@@ -2,7 +2,7 @@
 const tabs = document.getElementById("tabs");
 const descmodal = document.getElementById("descmodal");
 const projets_content = document.getElementById("projets_content");
-const projets_template = projets_content.querySelectorAll('[id="template"]')[0];
+const projets_template = projets_content.querySelectorAll('[data="template"]')[0];
 const embedrepo = document.getElementById("embedrepo");
 
 function createnewprojetelem(nom_projet, urllive, urlrepo, type, description, hidden) {
