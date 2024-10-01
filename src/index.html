@@ -20,7 +20,14 @@
     <dialog id="descmodal" class="modal">
         <div class="modal-box">
             <h3 class="text-lg font-bold" id="name">TP 1</h3>
-            <p class="py-4" id="desc">Le Premier TP, pour les balises HTML de base, fait le 16/09/2024.</p>
+            <p class="py-4" id="desc">
+                Le Premier TP, pour les balises HTML de base, fait le 16/09/2024.
+            </p>
+            <div class="flex justify-center">
+            <a id="embedrepo" target="_blank" href="https://github.com/MaximeLabille/MaximeLabille.github.io">
+                <img class="stats_repo bg-base-100" src="">
+            </a>
+        </div>
             <div class="modal-action">
                 <form method="dialog">
                     <button class="btn">Close</button>
@@ -73,16 +80,20 @@
     </div>
     <div class="flex flex-col place-items-center justify-center mb-6">
         <h1 class="my-4 text-2xl font-bold" id="projets">Mes Projets</h1>
-        <div style="transition: width 0.5s !important;" class="flex w-64 sm:max-w-96 sm:w-96 flex-col p-2 bg-base-200 rounded-xl">
+        <div style="transition: width 0.5s !important;"
+            class="flex w-64 sm:max-w-96 sm:w-96 flex-col p-2 bg-base-200 rounded-xl">
             <div role="tablist" id="tabs" class="tabs tabs-boxed mb-2">
-                <a role="tab" data="tp" class="tab tab-active">Les TPs</a>
-                <a role="tab" data="mission" class="tab">Les Missions</a>
+                <a role="tab" data="tp" class="tab tab-active transition-all duration-300">TPs</a>
+                <a role="tab" data="mission" class="tab transition-all duration-300">Missions</a>
+                <a role="tab" data="autre" class="tab transition-all duration-300">Autre</a>
             </div>
             <div id="projets_content" class="overflow-y-scroll max-h-64 min-h-64 h-64">
                 <div id="template" data="template" class="flex flex-row rounded-xl bg-base-300 p-4 mb-2">
-                    <div id="projet" class="text-sm sm:text-md my-auto">TP1</div>
+                    <div id="projet"
+                        class="shrink-[99999] mr-2 text-xs sm:text-sm my-auto text-ellipsis whitespace-nowrap overflow-hidden">
+                        TP1</div>
                     <div class="ml-auto">
-                        <button id="about" class="btn btn-square btn-neutral btn-sm">
+                        <button id="about" class="btn btn-square btn-neutral btn-sm animate-none">
                             <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                 class="h-4 w-4">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -90,7 +101,7 @@
                             </svg>
                         </button>
                         <a target="_blank" id="livelink" href="/TP1">
-                            <button class="btn btn-square btn-neutral btn-sm">
+                            <button class="btn btn-square btn-neutral btn-sm animate-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                     stroke="currentColor" class="h-4 w-4">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -99,7 +110,7 @@
                             </button>
                         </a>
                         <a target="_blank" id="repolink" href="https://github.com/MaximeLabille/TP1">
-                            <button class="btn btn-square btn-neutral btn-sm">
+                            <button class="btn btn-square btn-neutral btn-sm animate-none">
                                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                     stroke-width="2.5" class="h-4 w-4">
                                     <path
@@ -113,10 +124,18 @@
             </div>
         </div>
     </div>
+    <div class="hero place-items-center">
+        <div class="hero-content text-center">
+            <div class="max-w-xl">
+                <img style="transition: width 0.5s !important;" class="w-64 h-32 sm:w-96 sm:h-36 bg-base-200 rounded-xl"
+                    src="https://github-readme-stats.vercel.app/api?username=MaximeLabille&theme=vue-dark&show_icons=true&hide_border=true&count_private=true&bg_color=140f0f" />
+            </div>
+        </div>
+    </div>
     <footer class="footer footer-left bg-base-300 text-base-content p-4">
         <aside>
-            <p>Modifier pour la derniere fois le 09.30.2024 <a class="right-0 absolute mr-4 underline"
-                    href="/v1/">ancien site</a></p>
+            <p class="text-xs sm:text-sm">Modifier pour la derniere fois le 09.30.2024</p>
+            <a class="text-xs sm:text-sm right-0 absolute mr-4 underline" href="/v1/">ancien site</a>
         </aside>
     </footer>
     <script src="projets.js"></script>

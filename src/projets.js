@@ -3,14 +3,22 @@ const tabs = document.getElementById("tabs");
 const descmodal = document.getElementById("descmodal");
 const projets_content = document.getElementById("projets_content");
 const projets_template = projets_content.querySelectorAll('[id="template"]')[0];
+const embedrepo = document.getElementById("embedrepo");
 
 function createnewprojetelem(nom_projet, urllive, urlrepo, type, description, hidden) {
     let cloned = projets_template.cloneNode(true);
     cloned.attributes.data.value = type;
     cloned.querySelectorAll('[id="about"]')[0].addEventListener("click", function(){
-        descmodal.querySelectorAll('[id="name"]')[0].innerText = nom_projet
-        descmodal.querySelectorAll('[id="desc"]')[0].innerText = description
-        descmodal.showModal()
+        descmodal.querySelectorAll('[id="name"]')[0].innerText = nom_projet;
+        descmodal.querySelectorAll('[id="desc"]')[0].innerText = description;
+        embedrepo.href = urlrepo;
+        embedrepo.childNodes[1].src = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+        var username = urlrepo.split('://github.com/').pop().split('/')[0];
+        var repo = urlrepo.split("github.com/"+username+"/").pop();
+        setTimeout(function(){
+            embedrepo.childNodes[1].src = "https://github-readme-stats.vercel.app/api/pin/?username="+username+"&repo="+repo+"&theme=vue-dark&bg_color=140f0f&border_color=110c0c";
+            descmodal.showModal();
+        }, 50);
     });
     cloned.querySelectorAll('[id="projet"]')[0].innerText = nom_projet;
     cloned.querySelectorAll('[id="livelink"]')[0].href = urllive;
@@ -52,6 +60,9 @@ createnewprojetelem("TP 4", "/TP4", "https://github.com/MaximeLabille/TP4", "tp"
 createnewprojetelem("Mission 1", "/Mission1", "https://github.com/MaximeLabille/Mission1", "mission", "La premiere mission, le but etait de faire plusieures page en utilisant toutes les balises HTML que nous avions vu jusque a présent, fait le 13/09/2024.", true);
 createnewprojetelem("Mission 2", "/Mission2", "https://github.com/MaximeLabille/Mission2", "mission", "La seconde mission, faire un site avec du chapitrage grace aux IFRAME que nous avons vu dans le TP 2, fait le 20/09/2024.", true);
 createnewprojetelem("Mission 3", "/Mission3", "https://github.com/MaximeLabille/Mission3", "mission", "La seconde mission, faire un site avec plusieurs page en particulier un formulaire et l'utilisation du css, fait le 27/09/2024.", true);
+
+// autre proj
+createnewprojetelem("MaximeLabille.github.io", "/", "https://github.com/MaximeLabille/MaximeLabille.github.io", "autre", "Le site sur lequel vous êtes.", true);
 
 // trigger tabs
 var tabslist = document.getElementById("tabs").childNodes;
