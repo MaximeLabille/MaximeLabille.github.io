@@ -6,12 +6,12 @@ module.exports = {
   },
   daisyui: {
     themes: [
-      "light",
-      "dark",
       "forest",
     ],
     darkTheme: "forest",
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('daisyui'),
+  ],
 }
 
