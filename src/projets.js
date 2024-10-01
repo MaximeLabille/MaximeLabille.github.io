@@ -12,7 +12,7 @@ function createnewprojetelem(nom_projet, urllive, urlrepo, type, description, hi
         descmodal.querySelectorAll('[id="name"]')[0].innerText = nom_projet;
         descmodal.querySelectorAll('[id="desc"]')[0].innerText = description;
         embedrepo.href = urlrepo;
-        embedrepo.childNodes[1].src = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+        embedrepo.childNodes[1].src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSItMyAwIDQwMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIvPg==";
         var username = urlrepo.split('://github.com/').pop().split('/')[0];
         var repo = urlrepo.split("github.com/"+username+"/").pop();
         setTimeout(function(){
