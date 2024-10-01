@@ -38,7 +38,9 @@ jobs:
         run: sed -i "s|{{commitlink}}|${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}|g" src/index.html
 
       - name: Replace {{datecommit}} with commit date in index.html
-        run: sed -i "s/{{datecommit}}/${{ github.event.repository.updated_at }}/g" src/index.html
+        run:  |
+          date_last_commit=$(d_GIT_COMMIT_DATE=$(git log -1 --format=%cd --date=format:%d.%m.%Y)
+          sed -i "s/{{datecommit}}/${date_last_commit}/g" src/index.html
 
       - name: Build Tailwind CSS
         run: npm run build
