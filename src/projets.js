@@ -59,7 +59,8 @@ createnewprojetelem("TP 4", "/TP4", "https://github.com/MaximeLabille/TP4", "tp"
 // les missions
 createnewprojetelem("Mission 1", "/Mission1", "https://github.com/MaximeLabille/Mission1", "mission", "La premiere mission, le but etait de faire plusieures page en utilisant toutes les balises HTML que nous avions vu jusque a présent, fait le 13/09/2024.", true);
 createnewprojetelem("Mission 2", "/Mission2", "https://github.com/MaximeLabille/Mission2", "mission", "La seconde mission, faire un site avec du chapitrage grace aux IFRAME que nous avons vu dans le TP 2, fait le 20/09/2024.", true);
-createnewprojetelem("Mission 3", "/Mission3", "https://github.com/MaximeLabille/Mission3", "mission", "La seconde mission, faire un site avec plusieurs page en particulier un formulaire et l'utilisation du css, fait le 27/09/2024.", true);
+createnewprojetelem("Mission 3", "/Mission3", "https://github.com/MaximeLabille/Mission3", "mission", "La troisieme missio, fait le 27/09/2024.", true);
+createnewprojetelem("Mission 4", "/Mission4", "https://github.com/MaximeLabille/Mission4", "mission", "La quatrieme mission, fait le 06/10/2024.", true);
 
 // autre proj
 createnewprojetelem("MaximeLabille.github.io", "/", "https://github.com/MaximeLabille/MaximeLabille.github.io", "autre", "Le site sur lequel vous êtes.", true);
