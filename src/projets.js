@@ -55,6 +55,7 @@ createnewprojetelem("TP 1", "/TP1", "https://github.com/MaximeLabille/TP1", "tp"
 createnewprojetelem("TP 2", "/TP2", "https://github.com/MaximeLabille/TP2", "tp", "Le second TP, pour apprendre a utiliser la balises IFRAME, fait le 16/09/2024.", false);
 createnewprojetelem("TP 3", "/TP3", "https://github.com/MaximeLabille/TP3", "tp", "Le troisieme TP, pour apprendre a faire des Formulaire HTML, fait le 23/09/2024.", false);
 createnewprojetelem("TP 4", "/TP4", "https://github.com/MaximeLabille/TP4", "tp", "Le quatrieme TP, pour apprendre a utiliser le css (en particulier float), fait le 30/09/2024.", false);
+createnewprojetelem("TP JS 1", "/TP-JS1", "https://github.com/MaximeLabille/TP-JS1", "tp", "Le premier TP de javascript, fait le 07/10/2024.", false);
 
 // les missions
 createnewprojetelem("Mission 1", "/Mission1", "https://github.com/MaximeLabille/Mission1", "mission", "La premiere mission, le but etait de faire plusieures page en utilisant toutes les balises HTML que nous avions vu jusque a présent, fait le 13/09/2024.", true);
