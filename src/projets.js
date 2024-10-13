@@ -1,4 +1,4 @@
-// gestion des categories 
+// gestion des categories  
 const tabs = document.getElementById("tabs");
 const descmodal = document.getElementById("descmodal");
 const projets_content = document.getElementById("projets_content");
