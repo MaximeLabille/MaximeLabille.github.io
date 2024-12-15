@@ -69,6 +69,7 @@ createnewprojetelem("Mission 5", "/Mission5", "https://github.com/MaximeLabille/
 createnewprojetelem("Mission 6", "/Mission5/Missions/6/", "about:blank", "mission", "La 6eme mission, fait le 02/11/2024.", true);
 createnewprojetelem("Mission 7", "/Mission5/Missions/7/", "about:blank", "mission", "La 7eme mission.", true);
 createnewprojetelem("Mission 9", "/Mission9", "https://github.com/MaximeLabille/Mission9", "mission", "La 9eme mission, fait le 08/12/2024.", true);
+createnewprojetelem("Mission 10", "/Mission10", "https://github.com/MaximeLabille/Mission10", "mission", ".", true);
 
 // autre proj
 createnewprojetelem("MaximeLabille.github.io", "/", "https://github.com/MaximeLabille/MaximeLabille.github.io", "autre", "Le site sur lequel vous êtes.", true);
