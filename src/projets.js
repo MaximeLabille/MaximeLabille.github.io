@@ -51,25 +51,25 @@ function ChangeSelection(event) {
 }
 
 // les tps
-createnewprojetelem("TP 1", "/TP1", "https://github.com/MaximeLabille/TP1", "tp", "Le premier TP, pour apprendre les balises HTML de base, fait le 16/09/2024.", false);
-createnewprojetelem("TP 2", "/TP2", "https://github.com/MaximeLabille/TP2", "tp", "Le second TP, pour apprendre a utiliser la balises IFRAME, fait le 16/09/2024.", false);
-createnewprojetelem("TP 3", "/TP3", "https://github.com/MaximeLabille/TP3", "tp", "Le troisieme TP, pour apprendre a faire des Formulaire HTML, fait le 23/09/2024.", false);
-createnewprojetelem("TP 4", "/TP4", "https://github.com/MaximeLabille/TP4", "tp", "Le quatrieme TP, pour apprendre a utiliser le css (en particulier float), fait le 30/09/2024.", false);
-createnewprojetelem("TP JS 1", "/TP-JS1", "https://github.com/MaximeLabille/TP-JS1", "tp", "Le premier TP de javascript, fait le 07/10/2024.", false);
-createnewprojetelem("TP JS 2", "/TP-JS2", "https://github.com/MaximeLabille/TP-JS2", "tp", "Le second TP de javascript, fait le 04/11/2024.", false);
-createnewprojetelem("TP JS 3", "/TP-JS3", "https://github.com/MaximeLabille/TP-JS3", "tp", "Le troisieme TP de javascript, fait le 04/11/2024.", false);
-createnewprojetelem("TP JS 4", "/TP-JS4", "https://github.com/MaximeLabille/TP-JS4", "tp", "Le 4 eme TP de javascript, fait le 25/11/2024.", false);
+createnewprojetelem("TP 1", "https://maximeLabille.github.io/TP1", "https://github.com/MaximeLabille/TP1", "tpbts1", "Le premier TP, pour apprendre les balises HTML de base, fait le 16/09/2024.", false);
+createnewprojetelem("TP 2", "https://maximeLabille.github.io/TP2", "https://github.com/MaximeLabille/TP2", "tpbts1", "Le second TP, pour apprendre a utiliser la balises IFRAME, fait le 16/09/2024.", false);
+createnewprojetelem("TP 3", "https://maximeLabille.github.io/TP3", "https://github.com/MaximeLabille/TP3", "tpbts1", "Le troisieme TP, pour apprendre a faire des Formulaire HTML, fait le 23/09/2024.", false);
+createnewprojetelem("TP 4", "https://maximeLabille.github.io/TP4", "https://github.com/MaximeLabille/TP4", "tpbts1", "Le quatrieme TP, pour apprendre a utiliser le css (en particulier float), fait le 30/09/2024.", false);
+createnewprojetelem("TP JS 1", "https://maximeLabille.github.io/TP-JS1", "https://github.com/MaximeLabille/TP-JS1", "tpbts1", "Le premier TP de javascript, fait le 07/10/2024.", false);
+createnewprojetelem("TP JS 2", "https://maximeLabille.github.io/TP-JS2", "https://github.com/MaximeLabille/TP-JS2", "tpbts1", "Le second TP de javascript, fait le 04/11/2024.", false);
+createnewprojetelem("TP JS 3", "https://maximeLabille.github.io/TP-JS3", "https://github.com/MaximeLabille/TP-JS3", "tpbts1", "Le troisieme TP de javascript, fait le 04/11/2024.", false);
+createnewprojetelem("TP JS 4", "https://maximeLabille.github.io/TP-JS4", "https://github.com/MaximeLabille/TP-JS4", "tpbts1", "Le 4 eme TP de javascript, fait le 25/11/2024.", false);
 
 // les missions
-createnewprojetelem("Mission 1", "/Mission1", "https://github.com/MaximeLabille/Mission1", "mission", "La premiere mission, le but etait de faire plusieures page en utilisant toutes les balises HTML que nous avions vu jusque a présent, fait le 13/09/2024.", true);
-createnewprojetelem("Mission 2", "/Mission2", "https://github.com/MaximeLabille/Mission2", "mission", "La seconde mission, faire un site avec du chapitrage grace aux IFRAME que nous avons vu dans le TP 2, fait le 20/09/2024.", true);
-createnewprojetelem("Mission 3", "/Mission3", "https://github.com/MaximeLabille/Mission3", "mission", "La troisieme missio, fait le 27/09/2024.", true);
-createnewprojetelem("Mission 4", "/Mission4", "https://github.com/MaximeLabille/Mission4", "mission", "La quatrieme mission, fait le 06/10/2024.", true);
-createnewprojetelem("Mission 5", "/Mission5", "https://github.com/MaximeLabille/Mission5", "mission", "La 5eme mission, fait le 13/10/2024.", true);
-createnewprojetelem("Mission 6", "/Mission5/Missions/6/", "about:blank", "mission", "La 6eme mission, fait le 02/11/2024.", true);
-createnewprojetelem("Mission 7", "/Mission5/Missions/7/", "about:blank", "mission", "La 7eme mission.", true);
-createnewprojetelem("Mission 9", "/Mission9", "https://github.com/MaximeLabille/Mission9", "mission", "La 9eme mission, fait le 08/12/2024.", true);
-createnewprojetelem("Mission 10", "/Mission10", "https://github.com/MaximeLabille/Mission10", "mission", ".", true);
+createnewprojetelem("Mission 1", "https://maximeLabille.github.io/Mission1", "https://github.com/MaximeLabille/Mission1", "missionbts1", "La premiere mission, le but etait de faire plusieures page en utilisant toutes les balises HTML que nous avions vu jusque a présent, fait le 13/09/2024.", true);
+createnewprojetelem("Mission 2", "https://maximeLabille.github.io/Mission2", "https://github.com/MaximeLabille/Mission2", "missionbts1", "La seconde mission, faire un site avec du chapitrage grace aux IFRAME que nous avons vu dans le TP 2, fait le 20/09/2024.", true);
+createnewprojetelem("Mission 3", "https://maximeLabille.github.io/Mission3", "https://github.com/MaximeLabille/Mission3", "missionbts1", "La troisieme missio, fait le 27/09/2024.", true);
+createnewprojetelem("Mission 4", "https://maximeLabille.github.io/Mission4", "https://github.com/MaximeLabille/Mission4", "missionbts1", "La quatrieme mission, fait le 06/10/2024.", true);
+createnewprojetelem("Mission 5", "https://maximeLabille.github.io/Mission5", "https://github.com/MaximeLabille/Mission5", "missionbts1", "La 5eme mission, fait le 13/10/2024.", true);
+createnewprojetelem("Mission 6", "https://maximeLabille.github.io/Mission5/Missions/6/", "about:blank", "mission", "La 6eme mission, fait le 02/11/2024.", true);
+createnewprojetelem("Mission 7", "https://maximeLabille.github.io/Mission5/Missions/7/", "about:blank", "mission", "La 7eme mission.", true);
+createnewprojetelem("Mission 9", "https://maximeLabille.github.io/Mission9", "https://github.com/MaximeLabille/Mission9", "missionbts1", "La 9eme mission, fait le 08/12/2024.", true);
+createnewprojetelem("Mission 10", "https://maximeLabille.github.io/Mission10", "https://github.com/MaximeLabille/Mission10", "missionbts1", ".", true);
 
 // autre proj
 createnewprojetelem("MaximeLabille.github.io", "/", "https://github.com/MaximeLabille/MaximeLabille.github.io", "autre", "Le site sur lequel vous êtes.", true);

@@ -57,3 +57,7 @@ div[data="template"] {
     width: 400px;
     height: 120px;
 }
+
+.tab, .btn-sm, .btn-md, .btn-lg, .btn {
+    border-radius: 0.420rem !important;
+}
