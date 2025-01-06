@@ -83,7 +83,6 @@ createnewprojetelem("Mission 10", "https://maximeLabille.github.io/Mission10", "
 
 createnewprojetelem("TP PHP 1", "https://tp1.php.maximel.duckdns.org/", "", "tpsphp", "", true);
 createnewprojetelem("TP PHP 2", "https://tp2.php.maximel.duckdns.org/", "", "tpsphp", "", true);
-createnewprojetelem("TP PHP 3", "https://tp3.php.maximel.duckdns.org/", "", "tpsphp", "", true);
 
 
 // trigger tabs
