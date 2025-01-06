@@ -1,9 +1,7 @@
-name: Build Tailwind CSS
+name: Build and Release Tailwind CSS
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 on:
   push:
@@ -24,42 +22,34 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "20" # Specify the Node.js version you want to use
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
 
-      - name: Replace {{commit}} with commit SHA in index.html
+      - name: Replace placeholders in index.html
         run: |
           commit_sha=$(echo "${GITHUB_SHA}" | cut -c1-7)
           sed -i "s/{{commit}}/${commit_sha}/g" src/index.html
-
-      - name: Replace {{commitlink}} with commit link in index.html
-        run: sed -i "s|{{commitlink}}|${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}|g" src/index.html
-
-      - name: Replace {{datecommit}} with commit date in index.html
-        run:  |
+          sed -i "s|{{commitlink}}|${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}|g" src/index.html
           date_last_commit=$(git log -1 --format=%cd --date=format:%d.%m.%Y)
           sed -i "s/{{datecommit}}/${date_last_commit}/g" src/index.html
 
       - name: Build Tailwind CSS
         run: npm run build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./src
+      - name: Create ZIP archive
+        run: |
+          mkdir -p release
+          zip -r release/site.zip src/
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Create or Update GitHub Release
+        uses: softprops/action-gh-release@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: latest
+          release_name: Latest Build
+          body: "Automated release of the latest build."
+          draft: false
+          prerelease: false
+          files: release/site.zip
+
