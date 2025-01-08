@@ -81,8 +81,8 @@ createnewprojetelem("Mission 10", "https://maximeLabille.github.io/Mission10", "
 
 // les tps php
 
-createnewprojetelem("TP PHP 1", "https://tp1.php.maximel.duckdns.org/", "", "tpsphp", "", true);
-createnewprojetelem("TP PHP 2", "https://tp2.php.maximel.duckdns.org/", "", "tpsphp", "", true);
+createnewprojetelem("TP PHP 1", "https://tp1php.bts.maximelabille.dev/", "", "tpsphp", "", true);
+createnewprojetelem("TP PHP 2", "https://tp2php.bts.maximelabille.dev/", "", "tpsphp", "", true);
 
 
 // trigger tabs
